@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttonturquoise } from "../components/index";
+import { Buttonturquoise, Cardproduct } from "../components/index";
 
 const Home = function Home() {
   return (
@@ -34,6 +34,7 @@ const Home = function Home() {
         </div>
       </section>
       {/* end test design */}
+      <Cardproduct />
     </div>
   );
 };

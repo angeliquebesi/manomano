@@ -1,7 +1,7 @@
 import React from "react";
 
-function Homeproject() {
+function Houseproject() {
   return <div>Projet maison</div>;
 }
 
-export default Homeproject;
+export default Houseproject;
