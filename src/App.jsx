@@ -6,16 +6,16 @@ import {
   Panier,
   Comparaison,
   Guidance,
-  Homeproject,
   Roomproject,
+  Houseproject,
 } from "./pages/index";
 
 const App = function App() {
   return (
     // Routing Part
     <Routes>
-      <Route path="/home" element={<Homeproject />} />
-      <Route path="/home/room" element={<Roomproject />} />
+      <Route path="/house" element={<Houseproject />} />
+      <Route path="/house/room" element={<Roomproject />} />
       <Route path="/comparator" element={<Comparaison />} />
       <Route path="/guidance" element={<Guidance />} />
       <Route path="/cart" element={<Panier />} />
