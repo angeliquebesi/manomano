@@ -1,5 +1,6 @@
 import React from "react";
 import { Buttonturquoise, Cardproduct } from "../components/index";
+import placeholder from "../assets/images/placeholder.png";
 
 const Home = function Home() {
   return (
@@ -10,7 +11,7 @@ const Home = function Home() {
       <section className="p-8 gap-6 mx-auto flex items-center bg-lightgrey text-darkblue">
         <div className="p-8 w-1/4 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
           <h1 className="text-h1 font-bold pb-4">Lorem ipsum dolor sit</h1>
-          <img className="w-32" src="./assets/images/placeholder.png" alt="" />
+          <img className="w-32" src={placeholder} alt="" />
           <p className="p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -20,11 +21,7 @@ const Home = function Home() {
         </div>
         <div className="p-8 w-1/4 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
           <h1 className="text-h1 font-bold pb-4">Lorem ipsum dolor sit</h1>
-          <img
-            className="w-32"
-            src="../../src/assets/images/placeholder.png"
-            alt=""
-          />
+          <img className="w-32" src={placeholder} alt="" />
           <p className="p">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
