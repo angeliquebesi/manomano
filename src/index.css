@@ -1,3 +1,6 @@
+body iframe {
+  pointer-events: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
