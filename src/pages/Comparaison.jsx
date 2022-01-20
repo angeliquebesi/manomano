@@ -3,7 +3,7 @@ import { Cardproduct } from "../components/Cards/index";
 
 function Comparaison() {
   return (
-    <div>
+    <div className="p-8 flex gap-4 flex-wrap bg-darkgrey text-lightgrey3 ">
       <h2 className="text-ellipsis text-3xl overflow-hidden w-full h-8 font-bold text-center">
         Which products ?
       </h2>
