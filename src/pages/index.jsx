@@ -6,10 +6,12 @@ import Guidance from "./Guidance";
 import Houseproject from "./Houseproject";
 import Roomproject from "./Roomproject";
 import Imagetest from "./Imagetest";
+import Produit from "./Produit";
 
 export {
   Home,
   Page404,
+  Produit,
   Panier,
   Comparaison,
   Guidance,

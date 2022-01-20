@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../index.css";
 
 function Cardproduct({ product }) {
+  console.log(product);
   return (
     <div className="py-2">
       <div
@@ -26,12 +28,14 @@ function Cardproduct({ product }) {
             <span className="w-16 text-h2 font-bold">{product.prix}</span>
           </div>
           <div className="pt-4">
-            <button
-              className="transition h-12 rounded bg-teal px-4 text-md font-semibold hover:bg-teal-400 active:bg-teal-700"
-              type="button"
-            >
-              View more
-            </button>{" "}
+            <Link to={`/comparator/${product.id}`}>
+              <button
+                className="transition h-12 rounded bg-teal px-4 text-md font-semibold hover:bg-teal-400 active:bg-teal-700"
+                type="button"
+              >
+                View more
+              </button>{" "}
+            </Link>
           </div>
         </div>
       </div>
