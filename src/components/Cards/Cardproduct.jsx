@@ -1,30 +1,43 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import pommeau from "../../assets/images/pommeau.jpg";
+import { Baignoires } from "../../api/data";
+import "../../index.css";
 
 function Cardproduct() {
   return (
-    <div>
-      <div className="p-2 w-72 flex flex-col gap-4 md:flex-row md:w-96 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
-        <img className="w-48 object-contain" src={pommeau} alt="" />
-        <div className="p-2 flex flex-col">
-          <h1 className="text-ellipsis overflow-hidden w-full h-20 font-bold ">
-            Le pommeau de douche vintage retro blanc steampunk laiton doré
-          </h1>
+    <div className="py-6">
+      {Baignoires.map((baignoire) => (
+        <div
+          key={baignoire.id}
+          className="p-2 my-3 max-w-full flex gap-4 md:flex-row md:w-96 rounded-lg shadowed"
+        >
+          <img
+            className="w-36 my-auto h-full rounded-2xl object-contain"
+            src={baignoire.image}
+            alt="représentation de l'objet"
+          />
+          <div className="p-2 flex flex-col">
+            <h1 className="text-ellipsis overflow-hidden w-full font-bold text-2xl">
+              {baignoire.nom}
+            </h1>
 
-          <p className="text-ellipsis overflow-hidden w-full h-24 ">
-            Alliant le charme désuet de l'époque Victorienne à l'hygiène
-            impeccable du XXIe siècle, le pommeau de douche vintage égaiera la
-            tristesse de votre salle de bains moderne. Vendu avec un lot de 3
-            joints mx37.
-          </p>
-          <div className="pt-2">
-            <span className="w-16 text-h1 font-bold">149</span>
-            <sup className="font-bold">€99</sup>
-            <span className="pl-1 line-through w-16 text-sm">199€99</span>
+            <p className="text-ellipsis overflow-hidden w-full ">
+              {baignoire.dimension}
+            </p>
+            <div className="pt-8">
+              <span className="w-16 text-h1 font-bold">{baignoire.prix}</span>
+            </div>
+            <div className="pt-4">
+              <button
+                className="transition h-12 rounded bg-teal px-5 text-lg font-semibold hover:bg-teal-400 active:bg-teal-700"
+                type="button"
+              >
+                View more
+              </button>{" "}
+            </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
