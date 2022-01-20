@@ -1,5 +1,5 @@
 import React from "react";
-import { Cardcategory } from "../components/index";
+import Cardcategory from "../components/Cards/Cardcategory";
 
 function Roomproject() {
   return (
