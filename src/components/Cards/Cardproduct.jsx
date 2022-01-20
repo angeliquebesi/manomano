@@ -8,7 +8,7 @@ function Cardproduct() {
       <div className="p-2 w-72 flex flex-col gap-4 md:flex-row md:w-96 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
         <img className="w-48 object-contain" src={pommeau} alt="" />
         <div className="p-2 flex flex-col">
-          <h1 className="text-ellipsis overflow-hidden w-full h-20 font-bold">
+          <h1 className="text-ellipsis overflow-hidden w-full h-20 font-bold ">
             Le pommeau de douche vintage retro blanc steampunk laiton doré
           </h1>
 
