@@ -5,7 +5,7 @@ import "./home.css";
 
 const Home = function Home() {
   return (
-    <div className="w-screen h-screen bg-black flex flex-col justify-center items-center">
+    <div className="w-screen h-screen bg-darkgrey flex flex-col justify-center items-center">
       <h1 className="home-title">Build your own project on Sunday !</h1>
       <div className="container-clef">
         <iframe
