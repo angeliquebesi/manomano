@@ -17,7 +17,7 @@ function Cardproduct() {
             alt="représentation de l'objet"
           />
           <div className="p-2 flex flex-col">
-            <h1 className="text-ellipsis overflow-hidden w-full font-bold text-2xl">
+            <h1 className="text-ellipsis overflow-hidden w-full font-bold text-h1">
               {baignoire.nom}
             </h1>
 
@@ -25,7 +25,7 @@ function Cardproduct() {
               {baignoire.dimension}
             </p>
             <div className="pt-8">
-              <span className="w-16 text-h1 font-bold">{baignoire.prix}</span>
+              <span className="w-16 text-h2 font-bold">{baignoire.prix}</span>
             </div>
             <div className="pt-4">
               <button
