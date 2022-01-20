@@ -1,0 +1,127 @@
+.container-plan{
+  width: 100vw;
+  height: 80vh;
+}
+
+.houseproject-title{
+  width: 70vw;
+  height: 30vh;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top:80%;
+  left: 15%;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+
+.btn-wc{
+  position: absolute;
+  z-index: 20;
+  top: 20.5%;
+  left: 36%;
+  color: black;
+  animation-duration: 10s;
+  animation-name: piece;
+
+}
+.btn-wc:hover{
+  color: aqua; 
+}
+.btn-bathroom{
+  position: absolute;
+  z-index: 20;
+  top: 20%;
+  left: 59%;
+  color: black; 
+  animation-duration: 10s;
+  animation-name: piece;
+
+}
+.btn-bathroom:hover{
+  color: aqua; 
+}
+.btn-kitchen{
+  position: absolute;
+  z-index: 20;
+  top: 35%;
+  left: 50%;
+  color: black; 
+  animation-duration: 10s;
+  animation-name: piece;
+
+}
+.btn-kitchen:hover{
+  color: aqua; 
+}
+.btn-living{
+  position: absolute;
+  z-index: 20;
+  top: 57%;
+  left: 52%;
+  color: black; 
+  animation-duration: 10s;
+  animation-name: piece;
+
+}
+.btn-living:hover{
+  color: aqua; 
+}
+.btn-bed{
+  position: absolute;
+  z-index: 20;
+  top: 57%;
+  left: 15%;
+  color: black; 
+  animation-duration: 10s;
+  animation-name: piece;
+}
+.btn-bed:hover{
+  color: aqua; 
+}
+@keyframes piece {
+  0% { opacity: 0%; color: black;}
+  40% { opacity: 0%; color: black;}
+  60% {opacity: 100%;color: aqua;}
+  100% { opacity: 100%; color: black;}
+}
+
+.container-chargement{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1.8s;
+  animation-name: chargementpage;
+}
+
+.bar-chargement{
+  width: 76vw;
+  height: 1.2vh;
+  background-color: #4FFFD9;
+  margin-bottom: 85px;
+  animation-duration: 1.8s;
+  animation-name: chargement;
+  transform-origin: left top;
+
+}
+
+@keyframes chargement {
+  0% {transform: scaleX(0)}
+  100% { transform: scaleX(1)}
+}
+
+@keyframes chargementpage {
+  0% {opacity: 100%;z-index: 70;}
+  50% {opacity: 100%;z-index: 70;}
+  70% {opacity: 100%;z-index: 70;}
+  100% {opacity: 100%;z-index: 0;}
+}
