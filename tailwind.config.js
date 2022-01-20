@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: "#FFF",
+        white: "whitesmoke",
         lightgrey: "#F5F6F7",
         lightgrey2: "#ecedf0",
         lightgrey3: "#eee",
@@ -23,7 +23,8 @@ module.exports = {
       fontSize: {
         mini: "12px",
         normal: "16px",
-        h1: "20px",
+        h1: "30px",
+        h2: "20px",
       },
     },
   },
