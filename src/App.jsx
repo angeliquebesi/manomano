@@ -10,22 +10,24 @@ import {
   Guidance,
   Roomproject,
   Houseproject,
+  Imagetest,
 } from "./pages/index";
 
 const App = function App() {
   return (
     <>
-      <Logo />
+      {/* <Logo /> */}
       <Routes>
         <Route path="/house" element={<Houseproject />} />
         <Route path="/house/room" element={<Roomproject />} />
         <Route path="/comparator" element={<Comparaison />} />
+        <Route path="/imagetest" element={<Imagetest />} />
         <Route path="/guidance" element={<Guidance />} />
         <Route path="/cart" element={<Panier />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      <Cache />
+      {/* <Cache /> */}
     </>
   );
 };
