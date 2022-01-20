@@ -2,26 +2,15 @@ const avis = [
   {
     prénom: "Victor",
     avis: 1,
-    contenu: "★☆☆☆☆",
-    texte: "J'aime pas trop la couleur et le rendu du produit",
+    contenu: "★★★★☆",
+    texte: "I love the color of the product!",
   },
   {
     prénom: "Angélique",
     avis: 2,
     contenu: "★★☆☆☆",
-    texte: "Mouais ça passe",
-  },
-  {
-    prénom: "Léonie",
-    avis: 3,
-    contenu: "★★★☆☆",
-    texte: "Pas mal mais la couleur me plait pas",
-  },
-  {
-    prénom: "Greg",
-    avis: 4,
-    contenu: "★★★★☆",
-    texte: "Super! La livraison est juste un peu longue",
+    texte:
+      "The product was very nice but i didn't have the tools to assemble it",
   },
 ];
 
