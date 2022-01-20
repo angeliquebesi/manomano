@@ -20,8 +20,8 @@
 .btn-wc{
   position: absolute;
   z-index: 20;
-  top: 20.5%;
-  left: 36%;
+  top: 18%;
+  left: 34%;
   color: black;
   animation-duration: 10s;
   animation-name: piece;
@@ -33,8 +33,8 @@
 .btn-bathroom{
   position: absolute;
   z-index: 20;
-  top: 20%;
-  left: 59%;
+  top: 16%;
+  left: 61%;
   color: black; 
   animation-duration: 10s;
   animation-name: piece;
@@ -46,7 +46,7 @@
 .btn-kitchen{
   position: absolute;
   z-index: 20;
-  top: 35%;
+  top: 33.5%;
   left: 50%;
   color: black; 
   animation-duration: 10s;
@@ -59,7 +59,7 @@
 .btn-living{
   position: absolute;
   z-index: 20;
-  top: 57%;
+  top: 60%;
   left: 52%;
   color: black; 
   animation-duration: 10s;
@@ -72,8 +72,8 @@
 .btn-bed{
   position: absolute;
   z-index: 20;
-  top: 57%;
-  left: 15%;
+  top: 60%;
+  left: 12%;
   color: black; 
   animation-duration: 10s;
   animation-name: piece;
@@ -99,16 +99,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-duration: 1.8s;
+  animation-duration: 2s;
   animation-name: chargementpage;
 }
 
 .bar-chargement{
-  width: 76vw;
-  height: 1.2vh;
+  width: 84vw;
+  height: 1.5vh;
   background-color: #4FFFD9;
-  margin-bottom: 85px;
-  animation-duration: 1.8s;
+  margin-bottom: 77px;
+  animation-duration: 2s;
   animation-name: chargement;
   transform-origin: left top;
 

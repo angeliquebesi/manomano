@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Houseproject() {
   return (
-    <div className="w-screen h-screen bg-black flex flex-col">
+    <div className="w-screen h-screen bg-darkgrey flex flex-col">
       <div className="container-chargement">
         <div className="bar-chargement" />
       </div>
