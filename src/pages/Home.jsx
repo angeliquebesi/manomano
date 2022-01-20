@@ -1,5 +1,4 @@
 import React from "react";
-import { Cardproduct } from "../components/Cards/index";
 import { Buttonturquoise, ButtonTransparent } from "../components/Button/index";
 
 const Home = function Home() {
@@ -8,10 +7,6 @@ const Home = function Home() {
       <h1>Home page</h1>
       <Buttonturquoise />
       <ButtonTransparent />
-      <Cardproduct />
-      <Cardproduct />
-      <Cardproduct />
-      <Cardproduct />
     </div>
   );
 };
