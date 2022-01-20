@@ -5,7 +5,7 @@ import Cardproduct from "../components/Cards/Cardproduct";
 function Comparaison() {
   return (
     <div className="p-8 flex gap-4 flex-wrap bg-darkgrey text-lightgrey3 ">
-      <h2 className="mt-8 text-ellipsis text-3xl overflow-hidden w-full h-8 font-bold text-center">
+      <h2 className="mt-12 text-ellipsis text-3xl overflow-hidden w-full h-8 font-bold text-center  mb-5">
         Which products ?
       </h2>
       {Baignoires.map((product) => (

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Cardbuy from "../components/Cards/Cardbuy";
 import Reviews from "./Reviews";
 import { Baignoires } from "../api/data";
@@ -13,9 +13,9 @@ function Produit() {
       </h2>
       <Cardbuy product={Baignoires[id]} />
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel iure unde
-        dolorem perspiciatis sit quia hic neque similique qui quaerat aut sint
-        dolorum architecto molestias, quam dolores suscipit officia porro!
+        The Baignoire Corvette series rectangular drop-in bathtub fits into any
+        bathroom style with its contemporary and timeless design. Its sloping
+        backrest provides the perfect position for a relaxing bath.
       </p>
       <section className="grid grid-rows-4 grid-flow-col w-full justify-around mt-20 mb-10">
         <label className="container" htmlFor="check">
@@ -44,11 +44,13 @@ function Produit() {
           <span className="checkmark rounded" />
         </label>
       </section>
-      <input
-        className="transition h-12 w-50 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-full"
-        type="submit"
-        value="Buy"
-      />
+      <Link to="/cart" className="w-screen">
+        <input
+          className="transition h-12 w-50 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-full"
+          type="submit"
+          value="Buy"
+        />
+      </Link>
       <Reviews />
     </div>
   );

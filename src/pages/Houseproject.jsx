@@ -1,6 +1,7 @@
 import React from "react";
 import "./houseproject.css";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 function Houseproject() {
   return (
@@ -23,9 +24,11 @@ function Houseproject() {
         <h2 className="btn-kitchen">Kitchen</h2>
         <h2 className="btn-living">Living room</h2>
         <h2 className="btn-bed">Bed room</h2>
-        <h1 className="houseproject-title">
-          Which rooms do you want to modify ?
-        </h1>
+        <Fade bottom>
+          <h1 className="houseproject-title">
+            Which rooms do you want to modify ?
+          </h1>
+        </Fade>
       </div>
     </div>
   );

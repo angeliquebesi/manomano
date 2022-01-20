@@ -17,7 +17,7 @@ function Cardcategory() {
               src={categorie.photo}
               alt="illustration de la categorie"
             />
-            <p className="text-ellipsis overflow-hidden w-full font-bold text-center">
+            <p className="text-ellipsis overflow-hidden w-full font-600 text-center">
               {categorie.name}
             </p>
           </div>
