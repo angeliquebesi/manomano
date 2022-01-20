@@ -1,15 +1,45 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Buttonturquoise from "../components/Button/Buttonturquoise";
-import { AccessoiresB } from "../api/data";
+import { AccessoiresB, Baignoires } from "../api/data";
 
 function Panier() {
+  const { id } = useParams();
+  const baignoire = Baignoires.filter((bain) => bain.id === parseInt(id, 10));
   return (
     <div className="text-white bg-darkgrey flex flex-col">
       <h1 className="mt-20 mb-4 text-center text-h1 font-semibold">
         Your order :
       </h1>
       <section className="p-6 flex flex-col w-full justify-around gap-4">
+        {baignoire.map((bain) => (
+          <div className="flex">
+            <img className="rounded h-28" src={bain.image} alt="" />
+            <div className="flex flex-col w-full text-h2 items-end">
+              <span className="truncate w-48 text-right text-normal ">
+                {bain.nom}
+              </span>
+              <span className="text-h1 font-bold">{bain.prix}</span>
+              <button
+                className="transition  mt-5 h-6 w-6 rounded bg-teal font-semibold hover:bg-teal-400 active:bg-teal-700  text-white text-normal"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  width="1em"
+                  viewBox="0 0 24 24"
+                  fill="currentcolor"
+                  className="h-6 w-6"
+                >
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        ))}
         {AccessoiresB.map((access) => (
           <div className="flex">
             <img className="rounded h-28" src={access.image} alt="" />

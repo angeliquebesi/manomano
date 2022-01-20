@@ -8,7 +8,7 @@ function Cardcategory() {
       {Categories.map((categorie) => (
         <a
           href={
-            categorie.name === "Baignoire et accessoires" ? "/comparator" : "/"
+            categorie.name === "Bathtub and accessories" ? "/comparator" : "/"
           }
         >
           <div className="p-2 my-3 w-36 flex flex-col gap-4 md:flex-row md:w-96 rounded-lg shadowed">

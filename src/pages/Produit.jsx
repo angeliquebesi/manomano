@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Cardbuy from "../components/Cards/Cardbuy";
 import Reviews from "./Reviews";
 import { Baignoires } from "../api/data";
@@ -44,11 +44,13 @@ function Produit() {
           <span className="checkmark rounded" />
         </label>
       </section>
-      <input
-        className="transition h-12 w-50 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-full"
-        type="submit"
-        value="Buy"
-      />
+      <Link to={`/comparator/${id}/cart`}>
+        <input
+          className="transition h-12 w-50 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-full"
+          type="submit"
+          value="Buy"
+        />
+      </Link>
       <Reviews />
     </div>
   );
