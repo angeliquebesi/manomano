@@ -13,7 +13,7 @@ function Panier() {
       </h1>
       <section className="p-6 flex flex-col w-full justify-around gap-4">
         {baignoire.map((bain) => (
-          <div className="flex">
+          <div key={bain.id} className="flex">
             <img className="rounded h-28" src={bain.image} alt="" />
             <div className="flex flex-col w-full text-h2 items-end">
               <span className="truncate w-48 text-right text-normal ">
@@ -41,7 +41,7 @@ function Panier() {
           </div>
         ))}
         {AccessoiresB.map((access) => (
-          <div className="flex">
+          <div key={access.id} className="flex">
             <img className="rounded h-28" src={access.image} alt="" />
             <div className="flex flex-col w-full text-h2 items-end">
               <span className="truncate w-48 text-right text-normal ">
