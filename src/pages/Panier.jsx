@@ -1,4 +1,5 @@
 import React from "react";
+import Buttonturquoise from "../components/Button/Buttonturquoise";
 
 function Panier() {
   return (
@@ -52,6 +53,9 @@ function Panier() {
       <div className="px-8 grid grid-cols-2 place-content-around items-center">
         <div className="text-h1 font-semibold">Price:</div>
         <div className="text-right text-h2">500€</div>
+      </div>
+      <div className="mt-10 mx-auto">
+        <Buttonturquoise content="send" />
       </div>
     </div>
   );
