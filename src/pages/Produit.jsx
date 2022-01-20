@@ -17,6 +17,33 @@ function Produit() {
         dolorem perspiciatis sit quia hic neque similique qui quaerat aut sint
         dolorum architecto molestias, quam dolores suscipit officia porro!
       </p>
+      <section className="grid grid-rows-4 grid-flow-col w-full justify-around mt-20 mb-10">
+        <label className="container" htmlFor="check">
+          One
+          <input type="checkbox" checked="checked" />
+          <span className="checkmark rounded" />
+        </label>
+        <label className="container" htmlFor="check">
+          two
+          <input type="checkbox" checked="checked" />
+          <span className="checkmark rounded" />
+        </label>
+        <label className="container" htmlFor="check">
+          three
+          <input type="checkbox" checked="checked" />
+          <span className="checkmark rounded" />
+        </label>
+        <label className="container" htmlFor="check">
+          four
+          <input type="checkbox" checked="checked" />
+          <span className="checkmark rounded" />
+        </label>
+        <label className="container" htmlFor="check">
+          five
+          <input type="checkbox" checked="checked" />
+          <span className="checkmark rounded" />
+        </label>
+      </section>
       <input
         className="transition h-12 w-50 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-full"
         type="submit"
