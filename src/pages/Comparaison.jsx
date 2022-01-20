@@ -1,5 +1,5 @@
 import React from "react";
-import { Cardproduct } from "../components/Cards/index";
+import Cardproduct from "../components/Cards/Cardproduct";
 
 function Comparaison() {
   return (
