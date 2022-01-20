@@ -26,7 +26,7 @@ const App = function App() {
         <Route exact path="/imagetest" element={<Imagetest />} />
         <Route exact path="/house" element={<Houseproject />} />
         <Route exact path="/guidance" element={<Guidance />} />
-        <Route exact path="/home " element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/" element={<Mano />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
