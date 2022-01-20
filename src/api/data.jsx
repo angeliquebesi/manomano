@@ -23,16 +23,47 @@ import mortier from "../assets/images/AccessoireC/mortier.jpg";
 import peigne from "../assets/images/AccessoireC/peigne.jpg";
 import tige from "../assets/images/AccessoireC/tige.jpg";
 import truelle from "../assets/images/AccessoireC/truelle.jpg";
+import baignoire from "../assets/images/Categories/baignoire.jpg";
+import miroir from "../assets/images/Categories/miroir.jpg";
+import meuble from "../assets/images/Categories/meuble.jpg";
+import douche from "../assets/images/Categories/douche.jpg";
+import lavabo from "../assets/images/Categories/lavabo.jpg";
+import carrelage from "../assets/images/Categories/carrelage.jpg";
 
-export const categories = [
-  "Meuble de salle de bain",
-  "Douche et accessoires",
-  "Baignoire et accessoires",
-  "Lavabos et vasque",
-  "Carrelage, béton ciré, et revêtement décoratif",
+export const Categories = [
+  {
+    id: 0,
+    name: "Meuble de salle de bain",
+    photo: meuble,
+  },
+  {
+    id: 1,
+    name: "Douche et accessoires",
+    photo: douche,
+  },
+  {
+    id: 2,
+    name: "Baignoire et accessoires",
+    photo: baignoire,
+  },
+  {
+    id: 3,
+    name: "Lavabos et vasque",
+    photo: lavabo,
+  },
+  {
+    id: 4,
+    name: "Carrelage, béton ciré, et revêtement décoratif",
+    photo: carrelage,
+  },
+  {
+    id: 5,
+    name: "Miroir",
+    photo: miroir,
+  },
 ];
 
-export const baignoires = [
+export const Baignoires = [
   {
     id: 0,
     nom: "Baignoire Corvette",
@@ -63,7 +94,7 @@ export const baignoires = [
   },
 ];
 
-export const accessoiresB = [
+export const AccessoiresB = [
   {
     id: 0,
     nom: "Pare baignoire",
@@ -124,7 +155,7 @@ export const accessoiresB = [
   },
 ];
 
-export const carrelage = [
+export const Carrelage = [
   {
     id: 0,
     nom: "Série Florentine centro blue",
@@ -155,7 +186,7 @@ export const carrelage = [
   },
 ];
 
-export const accessoiresC = [
+export const AccessoiresC = [
   {
     id: 0,
     nom: "Mortier",
