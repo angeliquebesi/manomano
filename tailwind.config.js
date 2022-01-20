@@ -6,8 +6,10 @@ module.exports = {
         white: "#FFF",
         lightgrey: "#F5F6F7",
         lightgrey2: "#ecedf0",
+        lightgrey3: "#eee",
         teal: "#29b9ad",
         darkblue: "#0C193A",
+        darkgrey: "#222",
       },
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
