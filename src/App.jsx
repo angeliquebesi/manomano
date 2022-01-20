@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Cache from "./components/Cache";
 import Logo from "./components/Logo";
 import {
   Home,
@@ -12,6 +11,7 @@ import {
   Houseproject,
   Imagetest,
   Produit,
+  Mano,
 } from "./pages/index";
 
 const App = function App() {
@@ -36,10 +36,10 @@ const App = function App() {
         <Route exact path="/imagetest" element={<Imagetest />} />
         <Route exact path="/house" element={<Houseproject />} />
         <Route exact path="/guidance" element={<Guidance />} />
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route path="/" element={<Mano />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      <Cache />
     </div>
   );
 };

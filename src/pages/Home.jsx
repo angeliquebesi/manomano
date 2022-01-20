@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import Buttonturquoise from "../components/Button/Buttonturquoise";
 import "./home.css";
@@ -6,7 +7,9 @@ import "./home.css";
 const Home = function Home() {
   return (
     <div className="w-screen h-screen bg-darkgrey flex flex-col justify-center items-center">
-      <h1 className="home-title">Build your own project on Sunday !</h1>
+      <Fade bottom>
+        <h1 className="home-title">Build your own project on Sunday !</h1>
+      </Fade>
       <div className="container-clef">
         <iframe
           title="home"

@@ -74,12 +74,12 @@ function Panier() {
         <div className="text-h1 font-semibold">Price:</div>
         <div className="text-right text-h2">500€</div>
       </div>
-      <div className="mx-auto px-6 text-sm">
-        <p>Other renovation works ? </p>
+      <div className="mx-auto px-6 text-sm flex flex-col items-center">
+        <p className="mt-7">Other renovation works ? </p>
         <p>
           <Link to="/house">
             <button
-              className="transition px-2 mx-1 rounded border-2 border-white font-light "
+              className="transition px-2 mx-3 mt-3 rounded border-2 border-white font-light "
               type="button"
             >
               house
@@ -88,7 +88,7 @@ function Panier() {
           or
           <Link to="/house/room">
             <button
-              className="transition mx-1 px-2 rounded border-2 border-white font-light "
+              className="transition mt-2 mb-6 mx-3 px-2 rounded border-2 border-white font-light "
               type="button"
             >
               bathroom
@@ -96,7 +96,7 @@ function Panier() {
           </Link>
         </p>
       </div>
-      <div className="my-5 mx-auto">
+      <div className=" w-sceen my-5 mx-auto">
         <Buttonturquoise content="Buy" />
       </div>
     </div>

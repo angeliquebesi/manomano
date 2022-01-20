@@ -5,7 +5,7 @@
 
 .houseproject-title{
   width: 70vw;
-  height: 30vh;
+  height: auto;
   text-align: center;
   position: absolute;
   z-index: 10;
@@ -99,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: chargementpage;
 }
 
@@ -108,7 +108,7 @@
   height: 1.5vh;
   background-color: #4FFFD9;
   margin-bottom: 77px;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: chargement;
   transform-origin: left top;
 

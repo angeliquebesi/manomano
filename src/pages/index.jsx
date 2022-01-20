@@ -7,6 +7,7 @@ import Houseproject from "./Houseproject";
 import Roomproject from "./Roomproject";
 import Imagetest from "./Reviews";
 import Produit from "./Produit";
+import Mano from "./Mano";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Houseproject,
   Roomproject,
   Imagetest,
+  Mano,
 };
