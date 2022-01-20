@@ -4,7 +4,7 @@ import "./guidance.css";
 
 function Guidance() {
   return (
-    <div className="w-screen h-screen text-white bg-black flex flex-col justify-center items-center">
+    <div className="w-screen h-screen text-white bg-darkgrey flex flex-col justify-center items-center">
       <h1 className="text-center text-h1 font-semibold">
         To build it you need :
       </h1>
