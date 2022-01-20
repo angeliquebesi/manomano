@@ -1,8 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Buttonturquoise from "../components/Button/Buttonturquoise";
-// import parebaignoire from "../assets/images/Accessoires/parebaignoire.jpg";
-// import vidage from "../assets/images/Accessoires/vidage.jpg";
-// import mitigeur from "../assets/images/Accessoires/mitigeur.jpg";
 import { AccessoiresB } from "../api/data";
 
 function Panier() {
@@ -21,51 +19,55 @@ function Panier() {
               </span>
               <span className="text-h1 font-bold">{access.prix}</span>
               <button
-                className="transition mt-5 h-6 w-6 rounded bg-teal font-semibold hover:bg-teal-400 active:bg-teal-700  text-white text-normal"
+                className="transition  mt-5 h-6 w-6 rounded bg-teal font-semibold hover:bg-teal-400 active:bg-teal-700  text-white text-normal"
                 type="button"
               >
-                X
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  height="1em"
+                  role="presentation"
+                  width="1em"
+                  viewBox="0 0 24 24"
+                  fill="currentcolor"
+                  className="h-6 w-6"
+                >
+                  <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+                </svg>
               </button>
             </div>
           </div>
         ))}
-
-        {/* <div className="flex">
-          <img className="rounded h-32 " src={vidage} alt="" />
-          <div className="flex flex-col w-48 text-h2 items-end">
-            <span className="text-normal ">Vidage de baignoire</span>
-            <span className="text-h1 font-bold">29,07 €</span>
-            <button
-              className="transition mt-9 h-6 w-6 rounded bg-teal font-semibold hover:bg-teal-400 active:bg-teal-700  text-white text-normal"
-              type="button"
-            >
-              X
-            </button>
-          </div>
-        </div>
-        <div className="flex">
-          <img className="rounded h-32 " src={mitigeur} alt="" />
-          <div className="flex flex-col w-48 text-h2 items-end">
-            <span className="text-ellipsis text-normal ">
-              Mitigeur thermostatique de bain-douche
-            </span>
-            <span className="text-h1 font-bold">179,90 €</span>
-            <button
-              className="transition mt-9 h-6 w-6 rounded bg-teal font-semibold hover:bg-teal-400 active:bg-teal-700  text-white text-normal"
-              type="button"
-            >
-              X
-            </button>
-          </div>
-        </div> */}
       </section>
       <div className="border-t-2 border-t-white w-10/12 mx-auto" />
       <div className="px-12 grid grid-cols-2 place-content-around items-center">
         <div className="text-h1 font-semibold">Price:</div>
         <div className="text-right text-h2">500€</div>
       </div>
-      <div className="my-10 mx-auto">
-        <Buttonturquoise content="send" />
+      <div className="mx-auto px-6 text-sm">
+        <p>Other renovation works ? </p>
+        <p>
+          <Link to="/house">
+            <button
+              className="transition px-2 mx-1 rounded border-2 border-white font-light "
+              type="button"
+            >
+              house
+            </button>
+          </Link>
+          or
+          <Link to="/house/room">
+            <button
+              className="transition mx-1 px-2 rounded border-2 border-white font-light "
+              type="button"
+            >
+              bathroom
+            </button>
+          </Link>
+        </p>
+      </div>
+      <div className="my-5 mx-auto">
+        <Buttonturquoise content="Buy" />
       </div>
     </div>
   );
