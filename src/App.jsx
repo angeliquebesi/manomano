@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Cache from "./components/Cache";
 import Logo from "./components/Logo";
 import {
   Home,
@@ -24,6 +25,7 @@ const App = function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
+      <Cache />
     </>
   );
 };
