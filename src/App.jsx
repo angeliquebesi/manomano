@@ -1,5 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Cache from "./components/Cache";
+import Logo from "./components/Logo";
 import {
   Home,
   Page404,
@@ -12,16 +14,19 @@ import {
 
 const App = function App() {
   return (
-    // Routing Part
-    <Routes>
-      <Route path="/house" element={<Houseproject />} />
-      <Route path="/house/room" element={<Roomproject />} />
-      <Route path="/comparator" element={<Comparaison />} />
-      <Route path="/guidance" element={<Guidance />} />
-      <Route path="/cart" element={<Panier />} />
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Page404 />} />
-    </Routes>
+    <>
+      <Logo />
+      <Routes>
+        <Route path="/house" element={<Houseproject />} />
+        <Route path="/house/room" element={<Roomproject />} />
+        <Route path="/comparator" element={<Comparaison />} />
+        <Route path="/guidance" element={<Guidance />} />
+        <Route path="/cart" element={<Panier />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Page404 />} />
+      </Routes>
+      <Cache />
+    </>
   );
 };
 
