@@ -19,14 +19,14 @@ const App = function App() {
     <>
       <Logo />
       <Routes>
-        <Route path="/comparator/:id" element={<Produit />} />
-        <Route path="/house/room" element={<Roomproject />} />
-        <Route path="/comparator" element={<Comparaison />} />
-        <Route path="/imagetest" element={<Imagetest />} />
-        <Route path="/house" element={<Houseproject />} />
-        <Route path="/guidance" element={<Guidance />} />
-        <Route path="/cart" element={<Panier />} />
-        <Route path="/home" element={<Home />} />
+        <Route exact path="/comparator/:id/cart" element={<Panier />} />
+        <Route exact path="/comparator/:id" element={<Produit />} />
+        <Route exact path="/house/room" element={<Roomproject />} />
+        <Route exact path="/comparator" element={<Comparaison />} />
+        <Route exact path="/imagetest" element={<Imagetest />} />
+        <Route exact path="/house" element={<Houseproject />} />
+        <Route exact path="/guidance" element={<Guidance />} />
+        <Route exact path="/home " element={<Home />} />
         <Route path="/" element={<Mano />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
