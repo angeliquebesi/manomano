@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Buttonturquoise from "../components/Button/Buttonturquoise";
 import "./home.css";
 
@@ -15,7 +16,9 @@ const Home = function Home() {
           height="100%"
         />
       </div>
-      <Buttonturquoise content={"Let's go !"} className="asbolute z-30" />
+      <Link to="/house">
+        <Buttonturquoise content={"Let's go !"} className="absolute z-30" />
+      </Link>
     </div>
   );
 };
