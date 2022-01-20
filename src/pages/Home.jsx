@@ -1,5 +1,5 @@
 import React from "react";
-import { Buttonturquoise } from "../components/index";
+import Buttonturquoise from "../components/Button/Buttonturquoise";
 import "./home.css";
 
 const Home = function Home() {
