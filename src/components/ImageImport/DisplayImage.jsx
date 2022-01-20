@@ -44,7 +44,7 @@ class DisplayImage extends Component {
           />
           <input
             className="text-xs bg-black border border-darkgrey rounded p-1"
-            value="Enlever un ficher"
+            value="Remove the file"
             type="submit"
             onClick={this.onImageRemove}
           />
