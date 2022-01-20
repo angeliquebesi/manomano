@@ -19,22 +19,38 @@ class DisplayImage extends Component {
     }
   };
 
+  onImageRemove = () => {
+    this.setState({
+      image: null,
+    });
+  };
+
   render() {
     return (
       <div>
         <div>
           <div>
             <img
+              className="max-w-xs"
               id="image-upload"
               src={this.state.image}
               alt={this.state.image}
             />
-            <input
-              id="image-input"
-              type="file"
-              name="myImage"
-              onChange={this.onImageChange}
-            />
+            <div className="flex flex-col">
+              <input
+                className="text-xs border border-darkgrey rounded"
+                id="image-input"
+                type="file"
+                name="myImage"
+                onChange={this.onImageChange}
+              />
+              <input
+                className="text-xs border border-darkgrey rounded p-1"
+                value="Enlever un ficher"
+                type="submit"
+                onClick={this.onImageRemove}
+              />
+            </div>
           </div>
         </div>
       </div>
