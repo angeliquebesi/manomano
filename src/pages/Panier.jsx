@@ -1,5 +1,5 @@
 import React from "react";
-import { Cardpanier } from "../components/index";
+import { Cardpanier } from "../components/Cards/index";
 
 function Panier() {
   return (

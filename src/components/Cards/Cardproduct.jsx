@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { Buttonturquoise } from "../Button/index";
 import pommeau from "../../assets/images/pommeau.jpg";
 import "../../index.css";
 
@@ -24,6 +25,7 @@ function Cardproduct() {
             <sup className="font-bold">€99</sup>
             <span className="pl-1 line-through w-16 text-sm">199€99</span>
           </div>
+          <Buttonturquoise content="Views more" />
         </div>
       </div>
     </div>

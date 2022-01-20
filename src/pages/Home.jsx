@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  Buttonturquoise,
-  ButtonTransparent,
-  Cardproduct,
-} from "../components/index";
+import { Cardproduct } from "../components/Cards/index";
+import { Buttonturquoise, ButtonTransparent } from "../components/Button/index";
 
 const Home = function Home() {
   return (
