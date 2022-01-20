@@ -18,7 +18,7 @@ class DisplayImage extends Component {
       });
     }
   }
-  
+
   onImageRemove = () => {
     this.setState({
       image: null,

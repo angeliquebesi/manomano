@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Cache from "./components/Cache";
 import Logo from "./components/Logo";
 import {
@@ -15,8 +15,18 @@ import {
 } from "./pages/index";
 
 const App = function App() {
+  const { pathname } = useLocation();
+
+  const appRef = React.useRef();
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
   return (
-    <>
+    <div ref={appRef}>
       <Logo />
       <Routes>
         <Route exact path="/comparator/:id/cart" element={<Panier />} />
@@ -30,7 +40,7 @@ const App = function App() {
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Cache />
-    </>
+    </div>
   );
 };
 
