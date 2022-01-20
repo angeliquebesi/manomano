@@ -5,6 +5,7 @@ import Comparaison from "./Comparaison";
 import Guidance from "./Guidance";
 import Houseproject from "./Houseproject";
 import Roomproject from "./Roomproject";
+import Imagetest from "./Imagetest";
 
 export {
   Home,
@@ -14,4 +15,5 @@ export {
   Guidance,
   Houseproject,
   Roomproject,
+  Imagetest,
 };
