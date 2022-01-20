@@ -1,0 +1,91 @@
+.cls-1,
+.cls-2{
+fill:none;
+stroke:#4fffd9;
+stroke-dasharray: 1000; 
+animation: dash 3s linear;
+}
+.cls-1{
+  stroke-linejoin:bevel;
+}
+.cls-2{
+  stroke-miterlimit:10;
+}
+@keyframes dash {
+  from {
+        stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.container-clickable-img{
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+  animation-delay: 3s;
+  animation-name: highligth;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+.img-baign{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  animation-delay: 3s;
+  animation-name: highligth;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+.img-lav{
+   width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  animation-delay: 3s;
+  animation-name: highligth;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+.img-duch{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;  
+  animation-delay: 3s;
+  animation-name: highligth;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes highligth {
+  0% { opacity: 0%;  z-index: 100;
+  }
+  25%{opacity: 80%;  z-index: 100;
+  }
+  50% {opacity: 0%;  z-index: 100;
+  }
+  75%{opacity: 80%;  z-index: 100;
+  }
+  100% { opacity: 0%;  z-index:0;
+  }
+}
+
