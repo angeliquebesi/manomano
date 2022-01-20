@@ -12,7 +12,7 @@ const Home = function Home() {
       </Fade>
       <div className="container-clef">
         <iframe
-          title="plan"
+          title="home"
           src="https://my.spline.design/clef-96e61e87c98117bb2a410d12b3cb036f/"
           frameBorder="0"
           width="100%"
