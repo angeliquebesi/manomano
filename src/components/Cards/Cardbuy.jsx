@@ -3,9 +3,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../index.css";
 
-function Cardproduct({ product }) {
+function Cardbuy({ product }) {
   return (
     <div className="py-2">
+      <Link to="/comparator">
+        <p className="text-3xl">←</p>
+      </Link>
       <div
         key={product.id}
         className="p-2 max-w-full flex gap-4 md:flex-row md:w-96 rounded-lg shadowed"
@@ -26,21 +29,10 @@ function Cardproduct({ product }) {
           <div className="pt-8">
             <span className="w-16 text-h2 font-bold">{product.prix}</span>
           </div>
-          <div className="pt-4">
-            <Link to={`/comparator/${product.id}`}>
-              <button
-                id="linkos"
-                className="transition h-12 rounded bg-teal px-4 text-md font-semibold hover:bg-teal-400 active:bg-teal-700"
-                type="button"
-              >
-                View more
-              </button>{" "}
-            </Link>
-          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default Cardproduct;
+export default Cardbuy;
