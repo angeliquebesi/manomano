@@ -10,15 +10,15 @@ class DisplayImage extends Component {
     this.onImageChange = this.onImageChange.bind(this);
   }
 
-  onImageChange = (event) => {
+  onImageChange(event) {
     if (event.target.files && event.target.files[0]) {
       const img = event.target.files[0];
       this.setState({
         image: URL.createObjectURL(img),
       });
     }
-  };
-
+  }
+  
   onImageRemove = () => {
     this.setState({
       image: null,
