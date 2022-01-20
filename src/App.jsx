@@ -12,6 +12,7 @@ import {
   Houseproject,
   Imagetest,
   Produit,
+  Mano,
 } from "./pages/index";
 
 const App = function App() {
@@ -26,7 +27,8 @@ const App = function App() {
         <Route path="/house" element={<Houseproject />} />
         <Route path="/guidance" element={<Guidance />} />
         <Route path="/cart" element={<Panier />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Mano />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Cache />
