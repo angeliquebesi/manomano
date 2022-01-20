@@ -9,7 +9,7 @@ function Comparaison() {
         Which products ?
       </h2>
       {Baignoires.map((product) => (
-        <Cardproduct key={product.id} baignoire={product} />
+        <Cardproduct key={product.id} product={product} />
       ))}
     </div>
   );
