@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { Buttonturquoise } from "../Button/index";
 import pommeau from "../../assets/images/pommeau.jpg";
 
 function Cardproduct() {
   return (
     <div>
-      <div className="p-2 w-72 flex flex-col gap-4 md:flex-row md:w-96 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
+      <div className="p-2 max-w-full flex gap-4 md:flex-row md:w-96 rounded-lg shadow-md bg-white border-1 border-lightgrey2">
         <img className="w-48 object-contain" src={pommeau} alt="" />
         <div className="p-2 flex flex-col">
           <h1 className="text-ellipsis overflow-hidden w-full h-20 font-bold">
@@ -23,6 +24,7 @@ function Cardproduct() {
             <sup className="font-bold">€99</sup>
             <span className="pl-1 line-through w-16 text-sm">199€99</span>
           </div>
+          <Buttonturquoise content="Views more" />
         </div>
       </div>
     </div>

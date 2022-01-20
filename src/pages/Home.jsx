@@ -3,7 +3,7 @@ import {
   Buttonturquoise,
   ButtonTransparent,
   Cardproduct,
-} from "../components/index";
+} from "../components/Cards/index";
 
 const Home = function Home() {
   return (
