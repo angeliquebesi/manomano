@@ -13,9 +13,9 @@ function Produit() {
       </h2>
       <Cardbuy product={Baignoires[id]} />
       <p>
-        The Baignoire Corvette series rectangular drop-in bathtub fits into any
-        bathroom style with its contemporary and timeless design. Its sloping
-        backrest provides the perfect position for a relaxing bath.
+        The Bath series rectangular drop-in bathtub fits into any bathroom style
+        with its contemporary and timeless design. Its sloping backrest provides
+        the perfect position for a relaxing bath.
       </p>
       <section className="grid grid-rows-4 grid-flow-col w-full justify-around mt-20 mb-10">
         <label className="container" htmlFor="check">
