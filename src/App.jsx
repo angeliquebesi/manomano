@@ -16,7 +16,7 @@ import {
 const App = function App() {
   return (
     <>
-      {/* <Logo /> */}
+      <Logo />
       <Routes>
         <Route path="/house" element={<Houseproject />} />
         <Route path="/house/room" element={<Roomproject />} />
@@ -27,7 +27,7 @@ const App = function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      {/* <Cache /> */}
+      <Cache />
     </>
   );
 };
