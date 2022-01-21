@@ -46,7 +46,7 @@ function Produit() {
       </section>
       <Link to={`/comparator/${id}/cart`}>
         <input
-          className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-72 flex flex-row justify-center "
+          className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-72 flex flex-row justify-center cursor-pointer"
           type="submit"
           value="Buy"
         />
