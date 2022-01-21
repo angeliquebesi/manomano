@@ -17,36 +17,36 @@ function Produit() {
         with its contemporary and timeless design. Its sloping backrest provides
         the perfect position for a relaxing bath.
       </p>
-      <section className="grid grid-rows-4 grid-flow-col w-full justify-around mt-20 mb-10">
-        <label className="container" htmlFor="check">
-          One
-          <input type="checkbox" checked="checked" />
-          <span className="checkmark rounded" />
+      <section className="grid grid-rows-6 grid-flow-col w-full mt-10 text-sm font-semibold gap-4">
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Dimensions of the location
         </label>
-        <label className="container" htmlFor="check">
-          two
-          <input type="checkbox" checked="checked" />
-          <span className="checkmark rounded" />
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Position of water inlets and drains
         </label>
-        <label className="container" htmlFor="check">
-          three
-          <input type="checkbox" checked="checked" />
-          <span className="checkmark rounded" />
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Size of water inlets and drains
         </label>
-        <label className="container" htmlFor="check">
-          four
-          <input type="checkbox" checked="checked" />
-          <span className="checkmark rounded" />
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Type of water inlet and drain connection
         </label>
-        <label className="container" htmlFor="check">
-          five
-          <input type="checkbox" checked="checked" />
-          <span className="checkmark rounded" />
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Have a bubble level, wrenches, a tool gripper, a hammer and a
+          measuring tape
+        </label>
+        <label className="flex gap-2">
+          <input className="form-checkbox h-5 w-5 text-teal" type="checkbox" />
+          Have some teflon
         </label>
       </section>
       <Link to={`/comparator/${id}/cart`}>
         <input
-          className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-72 flex flex-row justify-center "
+          className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white w-72 flex flex-row justify-center cursor-pointer"
           type="submit"
           value="Buy"
         />
