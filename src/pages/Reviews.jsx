@@ -84,8 +84,9 @@ function Reviews() {
             onChange={(e) => setInput(e.target.value)}
           />
           <input
-            className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white"
+            className="transition h-12 rounded bg-teal px-16 font-semibold hover:bg-teal-400 active:bg-teal-700  text-white cursor-pointer"
             type="submit"
+            value="Send"
             onClick={() =>
               setAllAvis(
                 allAvis.concat([
